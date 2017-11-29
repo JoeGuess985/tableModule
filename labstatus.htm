@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+
+		<script src="drawTable.js"></script>
+		<script src="data.js"></script>
+		<script src="cb_search.js"></script>
+		<script src="cb_sort.js"></script>
+		<script src="cb_filters.js"></script> 
+
+		<span id="date"></span>
+
+		<br>
+
+		Search: <input type="input" id="search" placeholder="Search.."/>
+		
+		<input type="button" value="x" onclick="module_drawTable.clearSearch('search')">
+
+		<br>
+	
+		<span id="filters"></span>
+
+		<table id="chart">
+			<thead>
+			</thead>
+			
+			<tbody>
+			</tbody>
+		</table>
+	
+		<script type="text/javascript">
+			window.onload = function()		//make sure document is loaded
+			{
+				module_drawTable.writeDate();
+				module_drawTable.initSearch("search", "module_drawTable.filterSearch");
+
+
+				module_drawTable.drawHeader("chart", rows);
+				module_drawTable.drawTable("chart", "search", rows);
+				module_drawTable.drawFilters("search", rows);
+				module_drawTable.initListeners("chart", "search", rows);
+			};
+		</script>
+
+	</body>
+</html>
