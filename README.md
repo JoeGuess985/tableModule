@@ -7,7 +7,7 @@ supports
 - sort by column
 
 
-![Alt text](/gfx/preview_tableModule.png?raw=true "KinesisJS preview")
+![Alt text](/gfx/preview_tableModule.gif?raw=true "tableModule preview")
 
 
 ###	TODO:
