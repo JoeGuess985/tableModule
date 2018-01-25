@@ -25,19 +25,18 @@ var module_searchFilters = (function (module_drawTable)
 	}
 
 
-	module_drawTable.drawFilters = function(searchBoxId, data)
+	module_drawTable.drawFilters = function(tableId, searchBoxId, data)
 	{
-		var s_filters = "";
-		
-		for(var key of module_drawTable.getKeys(data))
-			s_filters += "<input type='checkbox' name='filter' value='" + key.toUpperCase() + "'onchange=module_drawTable.updateFilter('" + searchBoxId + "')>" + key;
+		var headers = document.getElementById(tableId).tHead.getElementsByTagName("th");
 
-		s_filters += "<input type='button' value='clear' onclick='module_drawTable.clearFilters(\"" + searchBoxId + "\")'>";
-
-		document.getElementById("filters").innerHTML = s_filters;
+		for(var header of headers)
+		{
+			header.insertAdjacentHTML("afterbegin",	"<input type='checkbox' name='filter' value='" + header.innerHTML.toUpperCase() + "'onchange=module_drawTable.updateFilter('" + searchBoxId + "')>");
+		}
+	
+		//insert clear active filters button
+		document.getElementById(tableId).insertAdjacentHTML("beforebegin", "<input type='button' value='clear filters' onclick='module_drawTable.clearFilters(\"" + searchBoxId + "\")'>");
 	}
-
-
 
 	return module_drawTable;
 

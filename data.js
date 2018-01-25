@@ -3,17 +3,15 @@
 var s_date = "Monday, November 17 5:35:39 PM";
 
 //this bit needs to go into the table generator in a for loop. just update the existing loop with some concats
-var rows =
+var data =
 [
-	{STORE: '254', ENVIRONMENT: 'QA Features', IP: 'Offline', PROJECT: 'Decommissioned', ACS_VERSION: 'Offline', RTS_F5: 'Offline', STATE: 'Offline', MODEL: 'VM', LOGIX: 'Offline', EPS: '764'},
-	{STORE: '758', ENVIRONMENT: 'QA Features', IP: '10.149.114.201', PROJECT: 'EMV Certification', ACS_VERSION: 'ACS.2017.02.17', RTS_F5: 'CERT', STATE: 'WI', MODEL: 'VM', LOGIX: 'CERT', EPS: '764'},
-	{STORE: '759', ENVIRONMENT: 'QA Features', IP: '10.149.116.201', PROJECT: 'Chase Prod-Like', ACS_VERSION: 'ACS.2017.02.17', RTS_F5: 'Error', STATE: 'IL', MODEL: 'VM', LOGIX: 'Test', EPS: '13'},
-	{STORE: '760', ENVIRONMENT: 'Offshore Regression', IP: '10.149.118.201', PROJECT: 'Chase Sprint 3', ACS_VERSION: 'ACS.2017.03.15', RTS_F5: 'CERT', STATE: 'MI', MODEL: 'VM', LOGIX: 'Test', EPS: '13'},
-
-	{STORE: '774', ENVIRONMENT: 'QA Pre-Prod', IP: '10.149.86.201', PROJECT: 'EMV Certification', ACS_VERSION: 'ACS.2017.03.15', RTS_F5: 'CERT', STATE: 'IN', MODEL: 'R430', LOGIX: 'Test', EPS: '764'},
-	{STORE: '775', ENVIRONMENT: 'QA Features', IP: '10.149.224.201', PROJECT: 'Sprint 3 - ADK 6 OH WIC', ACS_VERSION: 'ACS.2017.03.15', RTS_F5: 'CERT', STATE: 'OH', MODEL: 'R430', LOGIX: 'CERT', EPS: '764'},
-	{STORE: '776', ENVIRONMENT: 'TDEM Reserved', IP: '10.149.84.201', PROJECT: 'FiPay Swipe - Fuel', ACS_VERSION: 'ACS.2017.03.15', RTS_F5: 'CERT', STATE: 'KY', MODEL: 'R430', LOGIX: 'Test', EPS: '764'}
-
+	{PLAYER: 'JOE', SERVER: 'mainserver', MAP: 'aerowalk', FRAGS: '13'},
+	{PLAYER: 'JIM', SERVER: 'mainserver', MAP: 'dm5', FRAGS: '1'},
+	{PLAYER: 'CARL', SERVER: 'remote server', MAP: 'gloom keep', FRAGS: '33'},
+	{PLAYER: 'HANK', SERVER: 'mainserver', MAP: 'e1m1', FRAGS: '10'},
+	{PLAYER: 'PHIL', SERVER: 'remote server', MAP: 'aerowalk', FRAGS: '33'},
+	{PLAYER: 'STAN', SERVER: 'some third server', MAP: 'dm5', FRAGS: '14'},
+	{PLAYER: 'KYLE', SERVER: 'fifth server', MAP: 'start', FRAGS: '21'}
 ];
 
 

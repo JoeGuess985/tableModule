@@ -35,6 +35,11 @@ var module_sortTable = (function (module_drawTable)
 	module_drawTable.toggleReverse = function(event, tableId, searchId, data) //need to sort AND reverse, because clicking an element header might not be the one currently selected
 	{
 	    var e = event.target;
+	
+		//table row click is catching embedding checbox clicks. this helps us ignore that.
+		if(e.type == "checkbox")
+			return;
+
 		data.columnSort(e.textContent);
 
 		//reverse sort if necessary, clear and set chevron styles

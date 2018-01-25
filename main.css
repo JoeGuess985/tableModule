@@ -29,7 +29,8 @@ tr:nth-child(even)
 
 th:after
 {
-	content: "  | ";
+	content: "  |▼";
+	color: #000;
 }
 
 
@@ -60,12 +61,14 @@ th.desc:hover:after
 th.asc:after
 {
 	content: "  |▲";
+	color: #fff;
 }
 
 
 th.desc:after
 {
 	content: "  |▼";
+	color: #fff;
 }
 
 

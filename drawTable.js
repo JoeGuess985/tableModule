@@ -3,11 +3,6 @@ var module_drawTable = (function ()
 
 	//////utilities
 
-	function writeDate()
-	{
-		document.getElementById("date").innerHTML = s_date;		//pulling from global so the data generating script can populate date
-	}
-
 	function getKeys(data)
 	{
 		return Object.keys(data[0]);
@@ -52,7 +47,6 @@ var module_drawTable = (function ()
 	}
 
 
-
-	return	{writeDate: writeDate, getKeys: getKeys, drawHeader: drawHeader, drawTable: drawTable};
+	return	{getKeys: getKeys, drawHeader: drawHeader, drawTable: drawTable};
 
 })();

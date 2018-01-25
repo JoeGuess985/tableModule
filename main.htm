@@ -36,14 +36,12 @@
 		<script type="text/javascript">
 			window.onload = function()		//make sure document is loaded
 			{
-				module_drawTable.writeDate();
 				module_drawTable.initSearch("search", "module_drawTable.filterSearch");
 
-
-				module_drawTable.drawHeader("chart", rows);
-				module_drawTable.drawTable("chart", "search", rows);
-				module_drawTable.drawFilters("search", rows);
-				module_drawTable.initListeners("chart", "search", rows);
+				module_drawTable.drawHeader("chart", data);
+				module_drawTable.drawTable("chart", "search", data);
+				module_drawTable.drawFilters("chart", "search", data);
+				module_drawTable.initListeners("chart", "search", data);
 			};
 		</script>
 

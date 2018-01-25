@@ -1,2 +1,21 @@
 # tableModule
-modular javascript html table with search by column filters, and sort by column
+modular javascript html table 
+
+supports 
+- search 
+- filter by column 
+- sort by column
+
+
+![Alt text](/gfx/preview_tableModule.png?raw=true "KinesisJS preview")
+
+
+###	TODO:
+- wrap up separating module logic
+- test using each module in a preexisting codebase
+- update github preview image to give viewer time to see whats happening
+- fork and update for the new ECMAScript 6 modules support
+
+
+### BUGS:
+- none known
